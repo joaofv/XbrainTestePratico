@@ -27,7 +27,7 @@ public class Venda {
 	private double valor;
 	
 	@Column(name = "vendaData")
-	@JsonFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date dataVenda;
 	
 	@ManyToOne
