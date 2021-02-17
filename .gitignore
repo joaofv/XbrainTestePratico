@@ -35,6 +35,7 @@ lib/
 manifest.yml
 out
 overridedb.*
+target/
 target
 transaction-logs
 .flattened-pom.xml
