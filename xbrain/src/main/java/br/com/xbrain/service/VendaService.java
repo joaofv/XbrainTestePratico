@@ -1,5 +1,8 @@
 package br.com.xbrain.service;
 
+import java.util.Date;
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import br.com.xbrain.model.Venda;
@@ -18,4 +21,9 @@ public class VendaService {
 		vendaRepository.save(venda);
 		return "Venda realizada com sucesso!";
 	}
+	
+
+    public List<Object[]> findBetweenDates(Date initialDate, Date finalDate){
+        return (vendaRepository.findBetweenDates(initialDate, finalDate));
+    }
 }
