@@ -17,12 +17,10 @@ public class VendaService {
 		this.vendaRepository = vendaRepository;
 	}
 	
-	public String adicionarVenda(Venda venda) {
-		vendaRepository.save(venda);
-		return "Venda realizada com sucesso!";
+	public Venda adicionarVenda(Venda venda) {
+		return vendaRepository.save(venda);
 	}
 	
-
     public List<Object[]> findBetweenDates(Date initialDate, Date finalDate){
         return (vendaRepository.findBetweenDates(initialDate, finalDate));
     }

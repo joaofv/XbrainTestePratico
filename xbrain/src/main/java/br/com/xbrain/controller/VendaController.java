@@ -29,7 +29,7 @@ public class VendaController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public String adicionarVenda(@RequestBody Venda venda) {
+	public Venda adicionarVenda(@RequestBody Venda venda) {
 		return vendaService.adicionarVenda(venda);
 	}
 	
